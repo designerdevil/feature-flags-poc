@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  height: 200px;
+  position: relative;
+}
+
+.component {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

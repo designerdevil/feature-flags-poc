@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{features.title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  {{#if features.feature1}}
+  <link rel='stylesheet' href='/stylesheets/component1.css' />
+  {{/if}}
+  {{#if features.feature2}}
+  <link rel='stylesheet' href='/stylesheets/component2.css' />
+  {{/if}}
+  {{#if features.feature3}}
+  <link rel='stylesheet' href='/stylesheets/component3.css' />
+  {{/if}}
+  {{#if features.feature4}}
+  <link rel='stylesheet' href='/stylesheets/component4.css' />
+  {{/if}}
+</head>
+
+<body>
+  <div class="grid">
+    <div class="item">
+      {{#if features.feature1}}
+        <div class="component component1">COMPONENT 1</div>
+      {{/if}}
+    </div>
+    <div class="item">
+      {{#if features.feature2}}
+        <div class="component component2">COMPONENT 2</div>
+      {{/if}}
+    </div>
+    <div class="item">
+      {{#if features.feature3}}
+        <div class="component component3">COMPONENT 3</div>
+      {{/if}}
+    </div>
+    <div class="item">
+      {{#if features.feature4}}
+        <div class="component component4">COMPONENT 4</div>
+      {{/if}}
+    </div>
+  </div>
+</body>
+
+</html>
